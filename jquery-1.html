@@ -32,7 +32,18 @@ function undo(){
   $('h2').show();
   $('h3').show();
 }
+function highlightByline(){
+  $('.byline').addClass('background');
+}
+function unHighlightByline(){
+    $('.byline').removeClass('background');
+}
 </script>
+<style>
+.background{
+  color: yellow;
+}
+</style>
 
 </head>
 <body>
