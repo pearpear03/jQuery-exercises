@@ -12,7 +12,18 @@ function changeHeadlines(){
   $('h1').text("New headline");
   $('h2').text("A Wikipedia article");
 }
-
+function logHeadlines(){
+  var text1 = $('h1').text();
+  console.log(text1);
+  var text2 = $('h2').text();
+  console.log(text2);
+}
+function swapHeadlines(){
+  var text1 = $('h1').text();
+  var text2 = $('h2').text();
+  $('h1').text(text2);
+  $('h2').text(text1);
+}
 </script>
 
 </head>
